@@ -1,4 +1,6 @@
 import React from 'react'
+import {FaBars, FaBackward, FaForward, FaPlay, FaPause} from 'react-icons/fa'
+
 
 export default function Button() {
     return (
@@ -8,16 +10,18 @@ export default function Button() {
                 <h2>select</h2>
             </button>
             <button className='menu-button'>
-                <img src='https://cdn-icons-png.flaticon.com/512/2976/2976215.png'></img>
+               <FaBars className='menu'/>
             </button>
             <button className='left-button'>
-            <h2>select</h2>
+            <FaBackward className='backword'/>
         </button>
         <button className='right-button'>
-            <h2>select</h2>
+            <FaForward className='farword'/>
         </button>
         <button className='play-pause'>
-            <h2>select</h2>
+            <FaPlay className='play'/>
+            <FaPause className='play'/>
+
         </button>
 
 
