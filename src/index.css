@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.button-container{
+  width: 260px;
+  height:260px;
+  border:1px solid red;
+  margin: 10px auto 0px auto;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  
+}
+.center-circle{
+  height: 50%;
+  width: 50%;
+  border-radius: inherit;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+
+}
+.menu-button{
+  position: absolute;
+  top:0px;
+  height: 25%;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-radius: 40% 40% 0 0;
+}
+.menu-button img{
+  height: auto;
+  width: 25px;
+  
+}
+.left-button{
+  position: absolute;
+  left:0px;
+  height: 50%;
+  width: 25%;
+  background-color: transparent;
+  border-radius:   40% 0 0 40% ;
+  border: none;
+  
+}
+.right-button{
+  position: absolute;
+  right:0px;
+  height: 50%;
+  width: 25%;
+  background-color: transparent;
+  border-radius:    0 40%  40% 0;
+  border: none;
+  
+}
+.play-pause{
+  position: absolute;
+  bottom:0px;
+  height: 25%;
+  width: 50%;
+  background-color: transparent;
+  border-radius:    0 0 40% 40%;
+  border: none;
+  
+}
