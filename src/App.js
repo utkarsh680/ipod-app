@@ -1,11 +1,13 @@
+import React from 'react';
 
-import './App.css';
-import Button from './ipodComponent/Button';
+import Ipod from './Components/Ipod';
+import Button from './Components/IpodButton';
+import './Styles/App.css';
 
 function App() {
   return (
     <div>
-      <Button/>
+      <Ipod/>
     </div>
    
   
