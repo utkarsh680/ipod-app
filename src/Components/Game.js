@@ -1,14 +1,14 @@
-import Display from './Display'
 import React, { Component } from 'react'
 
-export default class Ipod extends Component {
-   
+export class Game extends Component {
   render() {
     return (
       <div>
-        <Display/>
+        game
       </div>
     )
   }
 }
+
+export default Game
 

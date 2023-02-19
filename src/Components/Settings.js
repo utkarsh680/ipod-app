@@ -1,14 +1,13 @@
-import Display from './Display'
 import React, { Component } from 'react'
 
-export default class Ipod extends Component {
-   
+export class Settings extends Component {
   render() {
     return (
       <div>
-        <Display/>
+        settting
       </div>
     )
   }
 }
 
+export default Settings

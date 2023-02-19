@@ -1,4 +1,4 @@
-.ipod{
+.ipod {
 
   display: flex;
   align-items: center;
@@ -9,156 +9,306 @@
 
 
 .main-box {
-width: 390px;
-height: 730px;
-margin: 7% auto auto auto;
-border-radius: 45px;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient(145deg, #fff, #e7e6e6);
-box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #fff;
-z-index: 1;
+  width: 385px;
+  height: 740px;
+  margin:auto;
+  border-radius: 45px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #fff, #e7e6e6);
+  box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #fff;
+  z-index: 1;
 
 }
 
 .screen {
-width: 345px;
-height: 330px;
-position: absolute;
-background-color: #f5f5f5;
-top: 20px;
-border-radius: 35px;
-box-shadow: inset 5px 5px 10px #eaeaea, inset -5px -5px 10px #fff;
+  display: flex;
+ flex-direction: row;
+  width: 345px;
+  height: 330px;
+ position: absolute;
+  background-color: #f5f5f5;
+  left:20px;
+  top:20px;
+  border-radius: 35px;
+  box-shadow: inset 5px 5px 10px #eaeaea, inset -5px -5px 10px #fff;
+}
+.screen-part{
+  display: flex;
+  flex-direction: row;
+  width: 345px;
+  height: 330px;
+ 
+}
+ .myicon{
+  height: 27px;
+  color: gray;
+}
+.screen  .enter{
+  height: 25px;
+}
+.left-display{
+  height: 100%;
+  width:50%;
+  border-radius:  30px 0px 0px 30px;
+  display: grid;
+  justify-content: space-around;
+}
 
+.right-display{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  background-position: center;
+  background-color: red;
+  border-radius: 0px 30px 30px 0px;
+ 
+}
+ .music-item{
+ 
+  height: 100%;
+  width: auto;
+  border-radius:  0px 30px 30px 0px;
+  background-color: rgb(251, 34, 60);
+  
+ 
+}
+.game-item{
+  height: 100%;
+  width: auto;
+  border-radius:  0px 30px 30px 0px;
+  background-color: black;
+  
+}
 
+.setting-item{
+  height: 100%;
+  width: auto;
+  border-radius:  0px 30px 30px 0px;
+  background-color: green;
+}
+.store-item{
+  height: 100%;
+  width: auto;
+  border-radius:  0px 30px 30px 0px;
+}
+.store{
+  display: grid;
+  grid-template-columns: 45px 60px 20px;
+font-family: sans-serif;
+  align-items: center;
+  position: relative;
+  /* margin-top: -30px; */
+  height: min-content; 
+  padding: 0px 4px 0px 10px;
+  border-radius: 15px;
+  
+ 
+}
+.music{
+  display: grid;
+  grid-template-columns: 45px 60px 20px;
+  font-family: sans-serif;
+  align-items: center;
+  position: relative;
+  height: min-content;
+  padding: 0px 4px 0px 10px;
+  border-radius: 15px;
+
+  
+}
+.game{
+  display: grid;
+  grid-template-columns: 45px 60px 20px;
+  font-family: sans-serif;
+  align-items: center;
+  position: relative;
+  height: min-content;
+  padding: 0px 4px 0px 10px;
+  border-radius: 15px;
+
+}
+.setting{
+  display: grid;
+  grid-template-columns: 45px 60px 20px;
+  align-items: center;
+  position: relative;
+  height: min-content;
+  font-family: sans-serif;
+  padding: 0px 4px 0px 10px;
+  border-radius: 15px;
+ 
+}
+
+header{
+  font-size: 1.5rem;
+  position: relative;
+  top:10px;
+  left: 5px;
+ 
+  font-family: 900;
+  color: black;
+  font-family:  sans-serif;
+  font: bold;
+  
 }
 
 
 
 .main-box .button-container {
-    width: 210px;
-    height: 210px;
-    border-radius: 25%;
-  
-    position: absolute;
-    top:58%;
-    left:90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(145deg, #fff, #e7e6e6);
-    box-shadow:  9px 9px 16px #c4c4c4,
-                 -9px -9px 16px #ffffff;
-    z-index: 2;
-    
-  
-  
+  width: 210px;
+  height: 210px;
+  border-radius: 25%;
+
+  position: absolute;
+  top: 56%;
+  left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #fff, #e7e6e6);
+  box-shadow: 9px 9px 16px #c4c4c4,
+    -9px -9px 16px #ffffff;
+  z-index: 2;
+
+
+
+}
+
+.center-circle {
+  height: 45%;
+  width: 45%;
+  border-radius: 45%;
+  background-color: rgb(239, 240, 240);
+  border: none;
+  box-shadow: 11px 11px 22px #d8d8d8, -11px -11px 22px #fff;
+
+}
+
+.menu-button {
+  position: absolute;
+  top: 0px;
+  height: 25%;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-radius: 40% 40% 0 0;
+
+
+}
+
+.menu-button .menu {
+  color: #5c5c5c;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+
+
+}
+
+.left-button {
+  position: absolute;
+  left: 0px;
+  height: 50%;
+  width: 25%;
+  background-color: transparent;
+  border-radius: 40% 0 0 40%;
+  border: none;
+
+}
+
+.left-button .backword {
+  color: #5c5c5c;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.right-button {
+  position: absolute;
+  right: 0px;
+  height: 50%;
+  width: 25%;
+  background-color: transparent;
+  border-radius: 0 40% 40% 0;
+  border: none;
+
+}
+
+.right-button .farword {
+  color: #5c5c5c;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.play-pause {
+  position: absolute;
+  bottom: 0px;
+  height: 25%;
+  width: 50%;
+  background-color: transparent;
+  border-radius: 0 0 40% 40%;
+  border: none;
+
+}
+
+.play-pause .play {
+  color: #5c5c5c;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.icon {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  bottom: 30px;
+
+
+}
+
+.icon-text {
+  color: #5c5c5c;
+  font-size: .7rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  position: absolute;
+  bottom: 13px;
+}
+@media  screen and (max-width:1536px) {
+  .main-box{
+  width: 340px;
+  height: 660px;
+  position: absolute;
+  margin: auto;
+  }
+  .screen {
+    width: 300px;
+    height: 300px;
+  }
+  .screen-part{
+    width: 300px;
+    height: 300px;
   }
   
-  .center-circle {
-    height: 45%;
-    width: 45%;
-    border-radius: 45%;
-    background-color: rgb(239, 240, 240);
-    border: none;
-    box-shadow:  11px 11px 22px #d8d8d8,  -11px -11px 22px #fff;
-  
-  }
-  
-  .menu-button {
-    position: absolute;
-    top: 0px;
-    height: 25%;
-    width: 50%;
-    background-color: transparent;
-    border: none;
-    border-radius: 40% 40% 0 0;
-    
-  
-  }
-  
-  .menu-button .menu {
-    color: #5c5c5c;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 700;
-    
-  
-  }
-  
-  .left-button {
-    position: absolute;
-    left: 0px;
-    height: 50%;
-    width: 25%;
-    background-color: transparent;
-    border-radius: 40% 0 0 40%;
-    border: none;
-  
-  }
-  
-  .left-button .backword {
-    color: #5c5c5c;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-  
-  .right-button {
-    position: absolute;
-    right: 0px;
-    height: 50%;
-    width: 25%;
-    background-color: transparent;
-    border-radius: 0 40% 40% 0;
-    border: none;
-  
-  }
-  
-  .right-button .farword {
-    color: #5c5c5c;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-  
-  .play-pause {
-    position: absolute;
-    bottom: 0px;
-    height: 25%;
-    width: 50%;
-    background-color: transparent;
-    border-radius: 0 0 40% 40%;
-    border: none;
-  
-  }
-  
-  .play-pause .play {
-    color: #5c5c5c;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  .icon {
-    height: 26px;
-    width: 26px;
-    position: absolute;
-    bottom: 20px;
-    
-    
-    }
-    .icon-text {
-    color: #5c5c5c;
-    font-size: .7rem;
-    margin-top: -10px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    position: absolute;
-    bottom: 7px;
-    }
-    
+.main-box .button-container {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 58%;
+  left: 84px;
+}
+
+}
+
+
+.active {
+  background-color: #0070f2;
+}
